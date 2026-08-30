@@ -33,7 +33,6 @@
    не будет работать; если пропущена — переустановить.
 4. **Install Now**.
 
-<!-- скриншот: установщик Python с отмеченной галочкой Add python.exe to PATH -->
 
 *Без прав администратора:* **Customize installation → Install for all users: снять галочку**.
 Либо установить Python из Microsoft Store.
@@ -79,7 +78,6 @@ python3 --version    # macOS
 2. Установить **Python** (Microsoft) и **Jupyter** (Microsoft).
 3. Опционально: **Russian Language Pack**.
 
-<!-- скриншот: панель Extensions с установленными Python и Jupyter -->
 
 *Проверка:* `Ctrl/Cmd + Shift + P` → команда `Jupyter: Create New Blank Notebook` есть в списке.
 
@@ -158,4 +156,3 @@ mglu-python/
 - [ ] `.ipynb` открывается, ячейка выполняется
 - [ ] Git установлен (`02_Git_и_GitHub.md`)
 
-Диагностика проблем — `05_Если_что_то_сломалось.md`.
