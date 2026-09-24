@@ -1,0 +1,17 @@
+column,data_type,description,source
+post_id,string,Unique numerical identifier for the Instagram post,Instagram / Apify
+shortcode,string,Alphanumeric permalink identifier for the Reel,Instagram / Apify
+creator_handle,string,Verified Instagram username/handle of the creator,Instagram / Apify
+niche,string,Categorized content niche/domain,Categorized
+caption,string,Raw caption text published with the Reel,Instagram / Apify
+timestamp_utc,datetime64[ns],UTC timestamp of publication,Instagram / Apify
+video_duration_sec,float64,Video duration in seconds,Instagram / Apify
+caption_word_count,int64,Total word count in caption (excluding hashtags),Derived (NLP)
+hashtag_count,int64,Number of hashtags extracted from the post,Derived (Regex)
+views,int64,Total recorded video view impressions,Instagram / Apify
+video_play_count,float64,Platform video play count,Instagram / Apify
+likes,int64,Total like count,Instagram / Apify
+comments,int64,Total comment count,Instagram / Apify
+engagement_rate_pct,float64,Derived interaction rate: ((Likes + Comments) / Views) * 100,Derived (Formula)
+virality_score,float64,Composite virality index (0-100) combining reach and engagement,Derived (Algorithm)
+virality_tier,string,"Categorical reach tier (Viral Hit, High Reach, Moderate Reach, Standard)",Derived (Classification)
